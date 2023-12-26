@@ -1,3 +1,8 @@
+''' in this module ----
+1- we will build connection with our mysql server
+2- then make a test database into our sql server
+'''
+
 import mysql.connector
 
 # making connection with database
@@ -18,7 +23,13 @@ def connection_conf():
     return(result)
 # print(connection_conf())
 
-cursor = 
-cunn.execute
+# creating a cursor object to execute sql query
+cursor = cunn.cursor()
 
+#creating test database
+cursor.execute("CREATE DATABASE if not exists test")
+
+# selecting all the databases
+cursor.execute("show databases")
+print(cursor.fetchall())
 
