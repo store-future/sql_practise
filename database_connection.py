@@ -18,5 +18,7 @@ def connection_conf():
     return(result)
 # print(connection_conf())
 
+cursor = 
+cunn.execute
 
 
